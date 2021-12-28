@@ -4,14 +4,17 @@
     href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css"
   />
   <section>
-    <h3>Our Services</h3>
-    <p class="section-lead">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <div class="services-grid">
-      <div class="service service1">
-        <i class="ti-themify-favicon-alt"></i>
+    <div data-aos="fade-up">
+      <h3>Our Services</h3>
+      <p class="section-lead">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="services-grid" >
+      <div class="service service1" data-aos="slide-right">
+        <i class="ti-themify-favicon-alt " ></i>
         <h4>Social Media</h4>
         <p>
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -22,7 +25,7 @@
         ></a>
       </div>
 
-      <div class="service service2">
+      <div class="service service2" data-aos="fade-up" >
         <i class="ti-shortcode"></i>
         <h4>Web Development</h4>
         <p>
@@ -34,7 +37,7 @@
         ></a>
       </div>
 
-      <div class="service service3">
+      <div class="service service3" data-aos="slide-left">
         <i class="ti-video-camera"></i>
         <h4>Video Animation</h4>
         <p>

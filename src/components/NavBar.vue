@@ -1,5 +1,5 @@
 <template>
-  <header class="header2 ">
+  <header class="header2">
     <a href="" class="logo">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png"
@@ -13,8 +13,8 @@
     <label class="menu-icon" for="menu-btn"
       ><span class="navicon"></span
     ></label>
-    <ul class="menu">
-      <li><a href="#work" class="home">Home</a></li>
+    <ul class="menu animate__animated animate__fadeInUp">
+      <li><a href="#work" class="home ">Home</a></li>
       <li><a href="#about" class="About">About</a></li>
       <li><a href="#careers" class="Services">Services</a></li>
       <li><a href="#contact" class="Contact">Contact</a></li>
@@ -25,41 +25,36 @@
 import $ from "jquery";
 export default {
   mounted() {
-   
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > 600) {
-          $(".header2").css(
-            { "background-color": "black" },
-            { "box-shadow": "5px -1px 12px -5px black " }
-          );
-          $(".header2").fadeIn("slow")
-          
-          $(".home").css({ color: "white" });
-          $(".About").css({ color: "white" });
-          $(".Services").css({ color: "white" });
-          $(".Contact").css({ color: "white" });
-          
-          $(".home").hover(function(){
-        $(this).css('color', '#aaa');
-          })
-          // console.log($(window))
-        } else if($(window).scrollTop() < 600) {
-          console.log($(window).scrollTop())
-          $(".header2").css({ "background-color": "transparent" });
-          $(".home").css({ color: "black" });
-          $(".About").css({ color: "black" });
-          $(".Services").css({ color: "black" });
-          $(".Contact").css({ color: "black" });
-        }
-      });
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 600) {
+        $(".header2").css(
+          { "background-color": "black" },
+          { "box-shadow": "5px -1px 12px -5px black " }
+        );
+        $(".header2").fadeIn("slow");
 
+        $(".home").css({ color: "white" });
+        $(".About").css({ color: "white" });
+        $(".Services").css({ color: "white" });
+        $(".Contact").css({ color: "white" });
+
+        $(".home").hover(function () {
+          $(this).css("color", "#aaa");
+        });
+        // console.log($(window))
+      } else if ($(window).scrollTop() < 600) {
+        $(".header2").css({ "background-color": "transparent" });
+        $(".home").css({ color: "black" });
+        $(".About").css({ color: "black" });
+        $(".Services").css({ color: "black" });
+        $(".Contact").css({ color: "black" });
+      }
+    });
   },
 };
 </script>
 
 <style scoped>
-
-
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -85,7 +80,6 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-
 .header2 ul {
   margin: 0;
   padding: 0;
@@ -99,7 +93,6 @@ a {
   /* border-right: 1px solid #f4f4f4; */
   text-decoration: none;
 }
-
 
 .header2 .logo {
   display: block;

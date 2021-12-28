@@ -4,14 +4,22 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
-          <h1 class="fw-light text-dark text-style">
-            We're  a digital agency
+          <h1
+            class="fw-light text-dark text-style animate__animated animate__lightSpeedInLeft"
+          >
+            We're a digital agency
           </h1>
-          <br>
-          <p class="lead text-dark text-style-span">
-            A great Place to Grow Your Bussness Up Level 
+          <br />
+          <p
+            class="lead text-dark text-style-span animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            A great Place to Grow Your Bussness Up Level
           </p>
-          <button class="btn btn-entry">Learn More</button>
+          <button
+            class="btn btn-entry animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            Learn More
+          </button>
         </div>
       </div>
     </div>
@@ -21,7 +29,7 @@
 export default {};
 </script>
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 .masthead {
   height: 100vh;
   min-height: 300px;
@@ -34,28 +42,32 @@ export default {};
   height: 600px;
 }
 
+.text-style {
+  background-color: rgb(192, 192, 192, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: "Yusei Magic", sans-serif;
+}
 
-.text-style{
-    background-color: rgb(192, 192, 192, 0.3);
-    padding: 20px;
-    border-radius: 10px;
-    font-weight: 700;
-    font-family: 'Yusei Magic', sans-serif;
-  }
+.text-style-span {
+  align-content: center;
+  justify-content: center;
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: "Yusei Magic", sans-serif;
+}
+.btn-entry {
+  background-color: rgb(193, 184, 184, 0.8);
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+  transition: all 1s ease-in;
 
-.text-style-span{
-    align-content: center;
-    justify-content: center;
-    display: block;
-    padding: 20px;
-    border-radius: 10px;
-    font-weight: 700;
-    font-family: 'Yusei Magic', sans-serif;
-  }
-.btn-entry{
-    background-color: rgb(193, 184, 184,0.8);
-    border-radius: 20px;
-    padding: 10px 40px 10px 40px;
-  }
-
+}
+.btn-entry:hover {
+  background-color: rgb(100, 100, 100,0.5);
+  /* width: 200px !important;  */
+}
 </style>

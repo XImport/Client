@@ -1,14 +1,14 @@
 <template>
   <br /><br />
-  <div class="text-justify text-center" style="overflow: hidden">
+  <div class="text-justify text-center" style="overflow: hidden" data-aos="fade-in" data-aos-duration="4000">
     <p>Quality</p>
     <br />
-    <h1 data-aos="fade-in" data-aos-duration="4000">
+    <h1 >
       98% of clients recommend us
     </h1>
     <div class="mg-card">
       <div class="container">
-        <div class="card">
+        <div class="card"  data-aos="slide-right">
           <img
             src="https://tsh.io/wp-content/uploads/2019/09/home-quality-strategic-partnership.svg
 "
@@ -18,7 +18,7 @@
 
           <a href="#">Learn more</a>
         </div>
-        <div class="card">
+        <div class="card"  data-aos="fade-up">
           <img
             src="
 https://tsh.io/wp-content/uploads/2019/09/home-quality-willing-to-refer.svg"
@@ -27,7 +27,7 @@ https://tsh.io/wp-content/uploads/2019/09/home-quality-willing-to-refer.svg"
           <p>98% Watch one of the success stories.</p>
           <a href="#">Learn more</a>
         </div>
-        <div class="card">
+        <div class="card"  data-aos="slide-left">
           <img
             src="https://tsh.io/wp-content/uploads/2019/09/home-quality-clutch-reviews.svg
 "
