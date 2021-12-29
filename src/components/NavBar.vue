@@ -14,10 +14,22 @@
       ><span class="navicon"></span
     ></label>
     <ul class="menu animate__animated animate__fadeInUp">
-      <li><a href="#work" class="home ">Home</a></li>
-      <li><a href="#about" class="About">About</a></li>
-      <li><a href="#careers" class="Services">Services</a></li>
-      <li><a href="#contact" class="Contact">Contact</a></li>
+      <li>
+        <router-link :to="{ name: 'Home' }" class="home" style="color: black"
+          >Home</router-link
+        >
+      </li>
+      <li>
+        <router-link :to="{ name: 'About' }" class="About" style="color: black"
+          >About</router-link
+        >
+      </li>
+      <li>
+        <a href="#careers" class="Services" style="color: black">Services</a>
+      </li>
+      <li>
+        <a href="#contact" class="Contact" style="color: black">Contact</a>
+      </li>
     </ul>
   </header>
 </template>
@@ -54,7 +66,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
